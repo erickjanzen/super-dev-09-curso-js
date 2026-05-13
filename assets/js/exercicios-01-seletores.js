@@ -12,3 +12,26 @@ function exercicio01CompararDoisNumeros(){
         alert(`O maior número é ${numero2}`)
     }
 }
+
+function exercicio02ClassificarIdade(){
+    const campoNome = document.getElementById("nome");
+    const nome = campoNome.value
+    const campoIdade = document.getElementById("idade")
+    const idade = parseInt(campoIdade.value)
+
+    let faixaEtaria = ""
+
+    if(idade <= 0) {
+        alert("Idade inválida")
+    } else if(parseInt(idade) < 18){
+        faixaEtaria = "Criança"
+    } else if (parseInt(idade) < 60){
+        faixaEtaria = "Adulto"
+    } else {
+        faixaEtaria = "Idoso"
+    }
+
+alert(`Nome do usuário: ${nome}
+Idade do usuário: ${idade}
+Faixa etária: ${faixaEtaria}`)
+}
