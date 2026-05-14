@@ -81,5 +81,33 @@ function exercicio04CalcularDescontoProduto(){
     resultadoFinal.value = `
 Produto: ${produto}
 Desconto: ${desconto}
-Preço final: R$ ${valorProduto}`
+Preço final: R$ ${valorProduto.toFixed(2)}`
+}
+
+function exercicio05SimularSalario(){
+    const nomeFuncionario = document.getElementById("funcionario")
+    const funcionario = nomeFuncionario.value
+    const salarioFuncionario = document.getElementById("salario")
+    const salario = parseFloat(salarioFuncionario.value)
+    const cargoFuncionario = document.getElementById("cargo")
+    const cargo = cargoFuncionario.value
+    let cargoLet = ''
+    let salarioAjustado
+
+    if(cargo === "pleno"){
+        salarioAjustado = salario * 1.3
+        cargoLet = 'Pleno'
+    } else if(cargo === "senior"){
+        salarioAjustado = salario * 1.6
+        cargoLet = 'Sênior'
+    } else {
+        salarioAjustado = salario
+        cargoLet = 'Júnior'
+    }
+
+    const resultadoFinal = document.getElementById("resultado2")
+    resultadoFinal.value = `Nome: ${funcionario}
+Cargo: ${cargoLet}
+Salário atual: ${salario}
+Salário reajustado: ${salarioAjustado}`
 }
