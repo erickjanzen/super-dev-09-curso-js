@@ -35,3 +35,31 @@ alert(`Nome do usuário: ${nome}
 Idade do usuário: ${idade}
 Faixa etária: ${faixaEtaria}`)
 }
+
+function exercicio03ClacularMediaEscolar(){
+   const primeiraNota = document.getElementById("nota1")
+   const nota1 = parseFloat(primeiraNota.value)
+   const segundaNota = document.getElementById("nota2")
+   const nota2 = parseFloat(segundaNota.value)
+   const terceiraNota = document.getElementById("nota3")
+   const nota3 = parseFloat(terceiraNota.value)
+
+   let media = (nota1 + nota2 + nota3) / 3
+   let status = ""
+
+   if(media < 7){
+    status = "Reprovado"
+   } else {
+    status = "Aprovado"
+   }
+
+   const campoResultado = document.getElementById("media")
+   campoResultado.value = `
+   Média final: ${media}
+   Status: ${status}
+   `
+}
+
+function exercicio04CalcularDescontoProduto(){
+    //continuar
+}
