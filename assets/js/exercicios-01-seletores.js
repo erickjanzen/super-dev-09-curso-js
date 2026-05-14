@@ -61,5 +61,25 @@ function exercicio03ClacularMediaEscolar(){
 }
 
 function exercicio04CalcularDescontoProduto(){
-    //continuar
+    const dadosInformados = document.getElementById("produto")
+    const produto = dadosInformados.value
+    const descontoInformado = document.getElementById("desconto")
+    const desconto = descontoInformado.value
+    const precoProduto = document.getElementById("preco")
+    const preco = parseFloat(precoProduto.value)
+    let valorProduto = 0
+    debugger
+    if(desconto === "10%"){
+       valorProduto = preco * 0.9
+    } else if(desconto === "20%"){
+        valorProduto = preco * 0.8
+    } else if(desconto === "30%"){
+        valorProduto = preco * 0.7
+    }
+
+    const resultadoFinal = document.getElementById("resultado")
+    resultadoFinal.value = `
+Produto: ${produto}
+Desconto: ${desconto}
+Preço final: R$ ${valorProduto}`
 }
