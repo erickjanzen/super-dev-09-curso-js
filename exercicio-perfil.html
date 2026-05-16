@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuário</title>
+</head>
+<body>
+    <script src="assets/js/exercicios-perfil.js"></script>
+    <link rel="stylesheet" href="assets/css/exercicios-perfil-tarefa.css">
+    <h2>Criar usuário</h2>
+
+    <div>
+        <label for="nomeUsuario">Nome do usuário</label>
+        <input type="text" id="nomeUsuario">
+    </div>
+        <div>
+            <label for="temaPerfil">Tema do perfil</label>
+            <select id="temaEscolhido">
+                <option selected disabled>Selecione o tema</option>
+                <option value="laranja">Laranja</option>
+                <option value="roxo">Roxo</option>
+                <option value="aura">AURA</option>
+            </select>
+        </div>
+        <div>
+            <label for="destaque">Modo destaque</label>
+            <input type="checkbox" id="destaque">
+        </div>
+        <div>
+            <button onclick="executarPerfil()" id="executar">Executar</button>
+        </div>
+        <span class="centro">
+        <div class="corArea" id="areaUsuario">
+        <div class="centro">
+            <img id="usuario" src="https://static.vecteezy.com/system/resources/thumbnails/019/879/186/small/user-icon-on-transparent-background-free-png.png">
+        </div>
+        <div class="centro">
+            <textarea disabled readonly id="caixaNome"></textarea>
+        </div>
+    </span>
+        </div>
+</body>
+</html>

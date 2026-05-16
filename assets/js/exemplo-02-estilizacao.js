@@ -1,20 +1,12 @@
 function alternarVisibilidadeBotao(){
-    //busca no HTML o elemento que possui o id "caixa-01"
     const divCaixa01 = document.getElementById("caixa-01");
-    //busca no html o botão que possui o id "botao-alternar-visibilidade"
     const botaoAlternarVisibilidade = document.getElementById("botao-alternar-visibilidade")
-    //verifica se caixa está sem valor de display ou escondida
-    if(divCaixa01.style.display === "" || divCaixa01.style.display === "none"){
-        //mostrar a caixa na tela
-        divCaixa01.style.display = "block"
-        //altera o texto do botao para indicar que a caixa pode ser ocultada
-        botaoAlternarVisibilidade.innerText = "Ocultar caixa";
 
-        //caso a caixa ja esteja visivel
+    if(divCaixa01.style.display === "" || divCaixa01.style.display === "none"){
+        divCaixa01.style.display = "block"
+        botaoAlternarVisibilidade.innerText = "Ocultar caixa";
     } else {
-        //esconde a caixa da tela
         divCaixa01.style.display = "none"
-        //altera o texto do botao para indicar que a caixa pode ser apresentada novamente
         botaoAlternarVisibilidade.innerText = "Apresentar caixa";
     }
 }

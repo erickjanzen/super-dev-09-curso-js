@@ -1,0 +1,53 @@
+.centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#caixaPrincipal{
+    width: 100px;
+    height: 100px;
+}
+
+.default{
+    background-color:black;
+    color:white;
+}
+
+.preto{
+    background-color: black;
+}
+.botoes{
+    margin-top: 30px;
+    gap: 20px;
+}
+
+button{
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.verde{
+    background-color: green;
+}
+
+.amarelo{
+    background-color: yellow;
+}
+
+.vermelho{
+    background-color: red;
+}
+
+.aumentar{
+    padding: 40px;
+}
+
+.diminuir{
+    padding: 10px;
+}
+
+.espaco{
+    margin: 30px;
+}

@@ -1,0 +1,68 @@
+.centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#usuario{
+    margin-top: 30px;
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+#areaUsuario{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.corArea{
+    background-color: grey;
+}
+
+#card{
+
+}
+
+.laranja{
+    background-color:orange;
+}
+
+.roxo{
+    background-color: purple;
+}
+
+.aura {
+    background: linear-gradient(
+      270deg,
+      #ff0000,
+      #ff9900,
+      #ffee00,
+      #33ff00,
+      #00ffee,
+      #0066ff,
+      #9900ff,
+      #ff0099,
+      #ff0000
+    );
+  
+    background-size: 1600% 1600%;
+  
+    animation: aura 10s ease infinite;
+  
+    /* aparência opcional */
+    color: white;
+    font-weight: bold;
+  }
+  
+  @keyframes aura {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
