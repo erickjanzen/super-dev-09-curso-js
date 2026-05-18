@@ -20,16 +20,16 @@
     background-color: grey;
 }
 
-#card{
-
-}
-
 .laranja{
     background-color:orange;
 }
 
 .roxo{
     background-color: purple;
+}
+
+#caixaNome{
+  font-family: arial;
 }
 
 .aura {
@@ -49,10 +49,6 @@
     background-size: 1600% 1600%;
   
     animation: aura 10s ease infinite;
-  
-    /* aparência opcional */
-    color: white;
-    font-weight: bold;
   }
   
   @keyframes aura {
@@ -65,4 +61,12 @@
     100% {
       background-position: 0% 50%;
     }
+  } 
+
+  .destaque{
+    font-family: arial;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1px 5px;
+    border-radius: 3px;
   }

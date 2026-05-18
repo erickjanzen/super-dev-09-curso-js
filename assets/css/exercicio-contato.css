@@ -1,0 +1,17 @@
+div{
+    margin-top: 10px;
+}
+
+.sumir{
+    display: none
+}
+
+#areaConfirmacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: green;
+    font-family: Courier;
+    font-weight: bold;
+}

@@ -1,7 +1,9 @@
 function executarPerfil(){
+    debugger
     const nomeUsuario = document.getElementById("nomeUsuario")
     const campoUsuario = document.getElementById("caixaNome")
-    campoUsuario.value = nomeUsuario.value
+    campoUsuario.innerText = nomeUsuario.value
+   
 
     const temaUsuario = document.getElementById("temaEscolhido")
     const temaCard = document.getElementById("areaUsuario")
@@ -15,5 +17,11 @@ function executarPerfil(){
     } else if(temaUsuario.value === "aura"){
         temaCard.classList.remove("roxo", "laranja")
         temaCard.classList.add("aura")
+    }
+    const destaque = document.getElementById("destaque")
+    if(destaque.checked){
+        campoUsuario.classList.add("destaque")
+    } else {
+        campoUsuario.classList.remove("destaque")
     }
 }

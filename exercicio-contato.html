@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+    <link rel="stylesheet" a href="assets/css/exercicio-contato.css">
+    <script src="assets/js/exercicio-contato.js"></script>
+
+    <h1>Registrar contato</h1>
+    <label for="nome">Nome</label>
+    <input type="text" id="nome">
+    <div>
+        <input type="radio" id="pessoal" name="contato" value="contatoPessoal" onchange="contatoPessoal()">
+        <label for="pessoal">Contato pessoal</label>
+        <input type="radio" id="comercial" name="contato" value="contatoComercial" onchange="contatoComercial()">
+        <label for="comercial">Contato comercial</label>
+    </div>
+
+    <span id="spanDoPessoal" class="sumir">
+    <div>
+        <label for="numeroPessoal">Número para contato</label>
+        <input type="number" id="numeroPessoal">
+    </div>
+    <div>
+        <label for="cpf">CPF</label>
+        <input type="number" id="cpf">
+    </div>
+    <div>
+        <label for="motivo">Motivo do contato</label>
+        <input type="text" id="motivoPessoal">
+    </div>
+    </span>
+
+    <span id="spanDoComercial" class="sumir">
+        <div>
+            <label for="numeroComercial">Número para contato</label>
+            <input type="number" id="numeroComercial">
+        </div>
+        <div>
+            <label for="cnpj">CNPJ</label>
+            <input type="number" id="cnpj">
+        </div>
+        <div>
+            <label for="nomeEmpresa">Nome da empresa</label>
+            <input type="text" id="nomeEmpresa">
+        </div>
+        <div>
+            <label for="motivo">Motivo do contato</label>
+            <select id="motivoComercial" >
+                <option disabled selected>Selecione um motivo</option>
+                <option value="Contratação">Contratação</option>
+                <option value="Compras">Compras</option>
+                <option value="Reclamação">Reclamação</option>
+            </select>
+        </div>
+    </span>
+    <div>
+        <button onclick="validarCadastro()">Validar cadastro</button>
+    </div>
+    <div id="areaConfirmacao" class="sumir">
+        <span id="cores"></span>
+    </div>
+</body>
+</html>
